@@ -1,0 +1,28 @@
+package com.internousdev.travel.action;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class CountryAction extends ActionSupport{
+
+	private String place;
+
+
+	public String execute(){
+
+	if(place.equals("japan")){
+		result name="japan";
+	}else if(place.equals("korea")){
+		result name="korea";
+	}else if(place.equals("aus")){
+		result name="aus";
+	}else if(place.equals("usa")){
+		result name="usa";
+	}else{
+		result name="canada";
+	}
+
+
+
+
+	}
+}

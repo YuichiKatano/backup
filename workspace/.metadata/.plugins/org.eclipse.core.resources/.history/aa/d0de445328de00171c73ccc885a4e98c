@@ -1,0 +1,12 @@
+package com.internousdev.travel.action;
+
+public class CountryAction extends ActionSupport{
+
+	private String country;
+
+
+	public String execute(){
+
+
+	}
+}

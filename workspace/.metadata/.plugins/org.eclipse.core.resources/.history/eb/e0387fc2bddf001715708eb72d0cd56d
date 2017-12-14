@@ -1,0 +1,14 @@
+package com.internousdev.travel.dao;
+
+public class MyPageDAO {
+	private DBConnector dbConector=new DBConnector();
+
+	private Connection connection=dbConnector.getConnection();
+
+
+	public ArrayList<MyPageDTO> getMyPageUserInfo(String item_transaction_id,String user_master_id) throws SQLException{
+		ArrayList<MyPageDTO> myPage=new ArrayList<MyPageDTO>();
+
+		String sql="ubit.id, iit.item_name, ubit.total_price, ubit.total_count, ubit.pay, ubit.insert_date from user_buy_item_transaction ubit left join item_info_transaction iit on ubit.item_transaction_id = iit.id where ubit.item_transaction_id  = ? and ubit.user_master_id  = ? order by insert_date desc";"
+	}
+}

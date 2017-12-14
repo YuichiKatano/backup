@@ -1,0 +1,11 @@
+package com.internousdev.travel.action;
+
+public class UsaAction extends ActionSupport{
+
+	public String execute(){
+		return SUCCESS;
+	}
+
+
+
+}

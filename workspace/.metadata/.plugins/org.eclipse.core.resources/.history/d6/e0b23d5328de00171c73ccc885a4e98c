@@ -1,0 +1,5 @@
+package com.internousdev.travel.action;
+
+public class CountryAction {
+
+}

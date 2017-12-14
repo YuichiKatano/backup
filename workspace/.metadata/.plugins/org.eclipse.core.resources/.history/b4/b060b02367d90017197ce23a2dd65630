@@ -1,0 +1,20 @@
+package com.internousdev.travel.action;
+
+import com.internousdev.travel.dao.LoginConfirmDAO;
+import com.internousdev.travel.dto.LoginConfirmDTO;
+import com.opensymphony.xwork2.ActionSupport;
+
+public class LoginConfirmAction extends ActionSupport  {
+
+	private String username;
+	private String password;
+
+	public String execute(){
+		String ERROR;
+		System.out.println(username);
+		System.out.println(password);
+		LoginConfirmDAO dao=new LoginConformDAO();
+		LoginConfirmDTO dto=new LoginConfirmDTO();
+	}
+
+}

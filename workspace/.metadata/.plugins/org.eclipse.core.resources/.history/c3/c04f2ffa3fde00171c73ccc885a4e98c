@@ -1,0 +1,10 @@
+package com.internousdev.travel.action;
+
+public class JapanAction extends ActionSupport{
+
+	public String execute(){
+
+	return SUCCESS;
+	}
+
+}

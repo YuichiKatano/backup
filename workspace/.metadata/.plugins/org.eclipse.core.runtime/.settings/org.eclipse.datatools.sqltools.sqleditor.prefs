@@ -1,0 +1,18 @@
+Double\ quoted\ string=0,0,0,0,0,199,141,155
+Identifier=0,0,0,0,0,130,103,126
+Keyword=0,0,0,0,0,130,103,126
+Multi-line\ comment=0,0,0,0,0,125,140,147
+Others=0,0,0,0,0,192,192,192
+Single\ quoted\ string=0,0,0,0,0,199,141,155
+Single-line\ comment=0,0,0,0,0,125,140,147
+Type=0,0,0,0,0,130,103,126
+com.sybase.stf.dmp.ui.sqleditor.template.customtemplates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+eclipse.preferences.version=1
+\u305D\u306E\u4ED6=0,0,0,0,1,192,192,192
+\u30AD\u30FC\u30EF\u30FC\u30C9=1,0,0,0,0,127,0,85
+\u30B7\u30F3\u30B0\u30EB\u30FB\u30AF\u30A9\u30FC\u30C8\u6587\u5B57\u5217=0,0,0,0,0,255,255,255
+\u30C0\u30D6\u30EB\u30FB\u30AF\u30A9\u30FC\u30C8\u6587\u5B57\u5217=0,0,0,0,0,255,255,255
+\u5358\u4E00\u884C\u30B3\u30E1\u30F3\u30C8=0,0,0,0,0,255,255,255
+\u578B=1,0,0,0,0,255,255,255
+\u8907\u6570\u884C\u30B3\u30E1\u30F3\u30C8=0,0,0,0,0,255,255,255
+\u8B58\u5225\u5B50=0,0,0,0,0,255,255,255

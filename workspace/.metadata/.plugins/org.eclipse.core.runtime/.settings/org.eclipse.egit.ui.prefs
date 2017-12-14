@@ -1,0 +1,5 @@
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>\u66F4\u65B0\u4F5C\u6210</message>\r\n<message>HelloWorld\u4F5C\u6210\u66F4\u65B0</message>\r\n<message>\u66F4\u65B0\u3057\u305F&\#x0A;\u4F5C\u6210\u3057\u305F&\#x0A;\uFF46\uFF4A\uFF46\uFF4A\uFF46\uFF4A\uFF46\uFF4A\u30C6\u30AD\u30B9\u30C8</message>\r\n</messages>
+eclipse.preferences.version=1
+show_git_prefix_warning=false
+show_home_drive_warning=false
+show_initial_config_dialog=false

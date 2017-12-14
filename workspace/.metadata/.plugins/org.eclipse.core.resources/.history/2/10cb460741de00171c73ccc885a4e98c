@@ -1,0 +1,8 @@
+package com.internousdev.travel.action;
+
+public class CanadaAction extends Action{
+	public String execute(){
+		return SUCCESS;
+	}
+
+}
