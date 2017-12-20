@@ -13,7 +13,9 @@
 <br>
 <br>
 <br>
-<a href=<s:url action="BuyItemAction"/>>購入ページへ</a>
+<a href='<s:url action="BuyItemAction"/>'>購入ページへ</a>
+<br>
+<a href='<s:url action="CountryAction"/>'>戻る</a>
 
 
 </body>

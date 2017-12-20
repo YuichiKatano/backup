@@ -14,7 +14,7 @@ public class BuyItemConfirmAction extends ActionSupport implements SessionAware{
 
 	private String id;
 
-	private int item_transaction_id;
+	private String item_transaction_id;
 
 
 	private String item_price;
@@ -84,11 +84,11 @@ public class BuyItemConfirmAction extends ActionSupport implements SessionAware{
 		return result;
 	}
 
-	public int getItem_transaction_id(){
+	public String getItem_transaction_id(){
 		return item_transaction_id;
 	}
 
-	public void setItem_transaction_id(int item_transaction_id){
+	public void setItem_transaction_id(String item_transaction_id){
 		this.item_transaction_id=item_transaction_id;
 	}
 

@@ -20,17 +20,16 @@ public class BuyItemCompleteAction extends ActionSupport implements SessionAware
 		BuyItemDTO DTO = (BuyItemDTO) session.get("DTO");
 
 		buyItemCompleteDAO.buyItemInfo(
-				DTO.getId(),
-				session.get("count").toString(),
-				session.get("totalPrice").toString(),
+				//DTO.getId(),
+				//int totalPrice = Integer.parseInt(buyItemDTO.getItemPrice()) * count;
+				session.get("item_transaction_id").toString(),
+				session.get("total_count").toString(),
+				session.get("total_price").toString(),
 				session.get("user_master_id").toString(),
 				session.get("pay").toString());
 
 		System.out.println(DTO.getId());
-		System.out.println(session.get("count").toString());
-		System.out.println(session.get("item_price").toString());
-		System.out.println(session.get("user_master_id").toString());
-		System.out.println(session.get("pay").toString());
+
 
 
 		String result=SUCCESS;

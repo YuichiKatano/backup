@@ -6,22 +6,13 @@
 <head>
 <link href="./css/style.css" rel="stylesheet" type="text/css">
 <meta  charset="UTF-8">
- <link rel="stylesheet" href="slick-theme.css" type="text/css">
- <link rel="stylesheet" href="slick.css" type="text/css">
- <link rel="stylesheet" href="sample.css" type="text/css">
- <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
- <script src="slick.js" type="text/javascript"></script>
- <script src="sample.js" type="text/javascript"></script>
+ <link rel="stylesheet" href="./css/sample.css" type="text/css">
+ <script type="text/javascript" src="./js/slick.js"></script>
+ <script src="./js/slick.js" type="text/javascript"></script>
 <title>Home</title>
 <script type="text/javascript">
 
-$(function(){
-$('.sightseeing').slick({
-	accessibility:true,
-	autoplay:true,
-	fade:true,
-	});
-});
+
 
 </script>
 </head>

@@ -18,14 +18,14 @@ public class BuyItemCompleteDAO {
 	private String sql = "INSERT INTO buy_item_transaction (item_transaction_id, total_count,  total_price, user_master_id, pay, insert_date, updated_date) VALUES(?, ?, ?, ?, ?, ?, ?)";
 
 
-	public void buyItemInfo(int item_transaction_id,  String total_count, String total_price, String user_master_id, String pay) throws SQLException {
+	public void buyItemInfo(String item_transaction_id,  String total_count, String total_price, String user_master_id, String pay) throws SQLException {
 
 		// InsertDate と updateDateのカラムに値を入れるため、現在時刻を取得します。
 		Date date = new Date();
 
 		try {
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
-			preparedStatement.setInt(1, item_transaction_id);
+			preparedStatement.setString(1, item_transaction_id);
 			preparedStatement.setString(2, total_count);
 			preparedStatement.setString(3, total_price);
 			preparedStatement.setString(4, user_master_id);
