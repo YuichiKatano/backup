@@ -1,8 +1,0 @@
-package com.internousdev.travel.action;
-
-public class AusAction extends ActionSupport{
-
-	public String execute(){
-		return SUCCESS;
-	}
-}

@@ -1,9 +1,0 @@
-package com.internousdev.travel.action;
-
-public class KoreaAction extends ActionSupport{
-
-	public String execute(){
-		return SUCCESS;
-	}
-
-}
