@@ -3,8 +3,8 @@ package com.internousdev.travel.dto;
 public class BuyItemDTO {
 
 	public int id;
-	public String itemName;
-	public String itemPrice;
+	public String item_name;
+	public String item_price;
 
 	public int getId(){
 		return id;
@@ -14,19 +14,19 @@ public class BuyItemDTO {
 		this.id=id;
 	}
 
-	public String getItemName(){
-		return itemName;
+	public String getItem_name(){
+		return item_name;
 	}
 
-	public void setItemName(String itemName){
-		this.itemName=itemName;
+	public void setItem_name(String item_name){
+		this.item_name=item_name;
 	}
 
-	public String getItemPrice(){
-		return itemPrice;
+	public String getItem_price(){
+		return item_price;
 	}
-	public void setItemPrice(String itemPrice){
-		this.itemPrice=itemPrice;
+	public void setItem_price(String item_price){
+		this.item_price=item_price;
 	}
 
 }

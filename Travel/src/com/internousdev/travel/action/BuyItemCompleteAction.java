@@ -17,16 +17,20 @@ public class BuyItemCompleteAction extends ActionSupport implements SessionAware
 
 	public String execute() throws SQLException{
 
-		BuyItemDTO buyItemDTO = (BuyItemDTO) session.get("buyItemDTO");
+		BuyItemDTO DTO = (BuyItemDTO) session.get("DTO");
 
 		buyItemCompleteDAO.buyItemInfo(
-				buyItemDTO.getId(),
+				DTO.getId(),
 				session.get("count").toString(),
 				session.get("totalPrice").toString(),
 				session.get("user_master_id").toString(),
 				session.get("pay").toString());
 
-
+		System.out.println(DTO.getId());
+		System.out.println(session.get("count").toString());
+		System.out.println(session.get("item_price").toString());
+		System.out.println(session.get("user_master_id").toString());
+		System.out.println(session.get("pay").toString());
 
 
 		String result=SUCCESS;

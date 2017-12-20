@@ -35,12 +35,12 @@ public class BuyItemAction extends ActionSupport implements SessionAware{
 
 
 		// コピーからメソッド（処理）を呼び出してMysqlからデータを取得します。
-		buyItemDTO =  buyItemDAO.getBuyItemInfo();
+		//buyItemDTO =  buyItemDAO.getBuyItemInfo();
 //		buyItemDTOList=buyItemDAO.select(id,item_name,item_price);
 		buyItemDTOList=buyItemDAO.selectAll();
 
 		// DTO中に入っているデータは他のJavaクラスで利用するかもしれないので、共通で使える箱にいれます。
-		session.put("buyItemDTO", buyItemDTO);
+		session.put("buyItemDTO", buyItemDTOList);
 
 		return result;
 

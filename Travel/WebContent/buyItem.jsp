@@ -37,28 +37,20 @@
 			</select>
 			 -->
 
-			<select name="itemName">
+			<select name="id">
 			  <s:if test ="buyItemDTOList">
-<!--   <option value='<s:property value="itemName" />'><s:property value="itemName" /></option>  -->
-			    <option value="japan">日本</option>
-					<option value="korea">韓国</option>
-					<option value="aus">オーストラリア</option>
-					<option value="usa">アメリカ</option>
-					<option value="canada">カナダ</option>
+			    	<option value="1">日本</option>
+					<option value="2">韓国</option>
+					<option value="3">オーストラリア</option>
+					<option value="4">アメリカ</option>
+					<option value="5">カナダ</option>
 			  </s:if>
 			</select>
 		 </div>
 		 <div>
 	<s:label>値段</s:label>
-			<select name="itemName">
-					<s:if test="buyItemDTOList">
-						<option value="japan">30000</option>
-						<option value="korea">30000</option>
-						<option value="aus">50000</option>
-						<option value="usa">80000</option>
-						<option value="canada">70000</option>
-				  	</s:if>
-				 </select>
+
+	購入場所により、値段は変わります。詳細は、購入確認画面で。
 
 
 			<!--<s:property value="session.buyItemDTO.itemPrice" />-->

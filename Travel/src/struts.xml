@@ -61,12 +61,32 @@
 		</action>
 
 		<action name="CountryAction" class="com.internousdev.travel.action.CountryAction" method="execute">
+		<result name="success">counrty.jsp</result>
+
+		</action>
+
+		<action name="JapanAction" class="com.internousdev.travel.action.JapanAction" method="execute">
 		<result name="success">japan.jsp</result>
+		</action>
+
+		<action name="KoreaAction" class="com.internousdev.travel.action.KoreaAction" method="execute">
 		<result name="success">korea.jsp</result>
+		</action>
+
+		<action name="AusAction" class="com.internousdev.travel.action.AusAction" method="execute">
 		<result name="success">aus.jsp</result>
+		</action>
+
+		<action name="UsaAction" class="com.internousdev.travel.action.UsaAction" method="execute">
 		<result name="success">usa.jsp</result>
+		</action>
+
+		<action name="CanadaAction" class="com.internousdev.travel.action.CanadaAction" method="execute">
 		<result name="success">canada.jsp</result>
 		</action>
+
+
+
 
 
 

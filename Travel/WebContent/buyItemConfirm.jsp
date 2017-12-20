@@ -35,17 +35,16 @@
 <s:form>
 
 		<p>国名</p>
-		<s:property value="session.buyItemDTO.itemName"/>
-
+		<s:property value="#session.item_name"/>
 		<br>
 		<p>値段</p>
-		<s:property value="session.totalPrice"/><span>円</span>
+		<s:property value="#session.item_price"/><span>円</span>
 		<br>
 		<p>人数</p>
-		<s:property value="session.count"/><span>人</span>
+		<s:property value="#session.count"/><span>人</span>
 		<br>
 		<p>支払い方法</p>
-		<s:property value="session.pay"/>
+		<s:property value="#session.pay"/>
 
 
 		<br><br><br>

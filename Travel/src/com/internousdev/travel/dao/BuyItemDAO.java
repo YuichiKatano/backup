@@ -39,8 +39,8 @@ public class BuyItemDAO {
 			while(resultSet.next()){
 				buyItemDTO=new BuyItemDTO();
 				buyItemDTO.setId(resultSet.getInt("id"));
-				buyItemDTO.setItemName(resultSet.getString("item_name"));
-				buyItemDTO.setItemPrice(resultSet.getString("item_price"));
+				buyItemDTO.setItem_name(resultSet.getString("item_name"));
+				buyItemDTO.setItem_price(resultSet.getString("item_price"));
 				buyItemDTOList.add(buyItemDTO);
 
 			}
@@ -51,23 +51,26 @@ public class BuyItemDAO {
 	}
 
 
-	public BuyItemDTO getBuyItemInfo(){
-		String sql="select id,item_name,item_price from item_info_transaction";
+	public BuyItemDTO getBuyItemInfo(String item_name){
+		String sql="select id,item_name,item_price from item_info_transaction WHERE id = ?";
 
+		BuyItemDTO dto = new BuyItemDTO();
 		try{
 			PreparedStatement preparedStatement=connection.prepareStatement(sql);
-			ResultSet resultSet=preparedStatement.executeQuery();
+			preparedStatement.setString(1, item_name);
+
+			ResultSet resultSet = preparedStatement.executeQuery();
 
 			while(resultSet.next()){
-				buyItemDTO.setId(resultSet.getInt("id"));
-				buyItemDTO.setItemName(resultSet.getString("item_name"));
-				buyItemDTO.setItemPrice(resultSet.getString("item_price"));
+				dto.setId(resultSet.getInt("id"));
+				dto.setItem_name(resultSet.getString("item_name"));
+				dto.setItem_price(resultSet.getString("item_price"));
 
 			}
 		}catch(SQLException e){
 			e.printStackTrace();
 		}
-		return buyItemDTO;
+		return dto;
 	}
 
 	public BuyItemDTO getBuyItemDTO(){

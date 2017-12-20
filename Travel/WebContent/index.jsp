@@ -6,25 +6,23 @@
 <head>
 <link href="./css/style.css" rel="stylesheet" type="text/css">
 <meta  charset="UTF-8">
+ <link rel="stylesheet" href="slick-theme.css" type="text/css">
+ <link rel="stylesheet" href="slick.css" type="text/css">
+ <link rel="stylesheet" href="sample.css" type="text/css">
+ <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+ <script src="slick.js" type="text/javascript"></script>
+ <script src="sample.js" type="text/javascript"></script>
 <title>Home</title>
 <script type="text/javascript">
-function SubmitAction(action,place){
-	var form=document.createElement('form');
-	document.body.appendChild(form);
-	form.setAttribute('action',action);
-	form.setAttribute('method','post');
 
-if(place=="japan"){
-	document.getElement('form').action='JapanAction';
-}else if(place=="korea"){
-	document.getElement('form').action='KoreaAction';
-}else if(place=="aus"){
-	document.getElement('form').action='AusAction';
-}else if(place=="usa"){
-	document.getElement('form').action='UsaAction';
-}else{
-	document.getElement('form').action='CanadaAction';
-}
+$(function(){
+$('.sightseeing').slick({
+	accessibility:true,
+	autoplay:true,
+	fade:true,
+	});
+});
+
 </script>
 </head>
 <body>
@@ -57,19 +55,25 @@ if(place=="japan"){
 
 <br><br><br><br><br><br>
 
-<s:form method="post">
-行きたい場所を選ぶ：
-<select name="place">
-		<option value="japan">日本</option>
-		<option value="korea">韓国</option>
-		<option value="aus">オーストラリア</option>
-		<option value="usa">アメリカ</option>
-		<option value="canada">カナダ</option>
-</select>
-<br>
-<input type="button" value="検索" onClick="SubmitAction('CountryAction')"/>
-
+<s:form action="CountryAction">
+		<s:submit value="国を検索"/>
 </s:form>
+<br><br>
+	<div class='sightseeing'>
+		<img src="img/japan.jpg">
+	</div>
+	<div>
+		<img src="img/korea.jpg">
+	</div>
+	<div>
+		<img src="img/aus.jpg">
+	</div>
+	<div>
+		<img src="img/usa.jpg">
+	</div>
+	<div>
+		<img src="img/canada.jpg">
+	</div>
 
 </div>
 

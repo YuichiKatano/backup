@@ -6,17 +6,18 @@ import java.util.Map;
 import org.apache.struts2.interceptor.SessionAware;
 
 import com.internousdev.travel.dao.BuyItemCompleteDAO;
+import com.internousdev.travel.dao.BuyItemDAO;
 import com.internousdev.travel.dto.BuyItemDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class BuyItemConfirmAction extends ActionSupport implements SessionAware{
 
-	private String country;
+	private String id;
 
 	private int item_transaction_id;
 
 
-	private int price;
+	private String item_price;
 
 	private int count;
 
@@ -29,11 +30,12 @@ public class BuyItemConfirmAction extends ActionSupport implements SessionAware{
 
 	private BuyItemCompleteDAO buyItemCompleteDAO=new BuyItemCompleteDAO();
 
+	BuyItemDAO buyItemDAO = new BuyItemDAO();
+
 
 
 
 	public String execute() throws SQLException{
-
 
 		if(payment.equals("1")) {
 
@@ -44,44 +46,37 @@ public class BuyItemConfirmAction extends ActionSupport implements SessionAware{
 
 		}
 
-/*
-		if(country.equals("japan")){
-			country="日本";
-			price=count*30000;
-		}else if(country.equals("korea")){
-			country="韓国";
-			price=count*30000;
-		}else if(country.equals("aus")){
-			country="オーストラリア";
-			price=count*50000;
-		}else if(country.equals("usa")){
-			country="アメリカ";
-			price=count*80000;
-		}else{
-			country="カナダ";
-			price=count*70000;
-		}
-*/
+
+
 
 		// 商品情報を持っているBuyItemDTOをSessionから取り出します。
 		// sessionから情報を取り出すと"Object型"データになっているので"BuyItemDTO型"情報に変換します。
-		BuyItemDTO buyItemDTO = (BuyItemDTO) session.get("buyItemDTO");
+		//BuyItemDTO buyItemDTO = (BuyItemDTO) session.get("buyItemDTO");
 
 		// 合計金額を保存する変数を作ります。
 		// Integer.parseInt(String型の情報) -> String型情報をint型に変換する。
-		int totalPrice = Integer.parseInt(buyItemDTO.getItemPrice()) * count;
-
-		session.put("totalPrice", totalPrice);
+		//int totalPrice = Integer.parseInt(buyItemDTO.getItemPrice()) * count;
 
 
 
+		BuyItemDTO dto = new BuyItemDTO();
 
-	//			session.put("item_transaction_id",item_transaction_id);
-	//			session.put("price",price);
+
+
+			dto = buyItemDAO.getBuyItemInfo(id);
+
+
+
+
+
+		System.out.println(dto.getItem_name());
+				session.put("item_name",dto.getItem_name());
+				session.put("item_price", dto.getItem_price());
 				session.put("count",count);
 				session.put("pay",payment);
-	//			session.put("user_master_id",user_master_id);
-	//			session.put("country",country);
+
+
+
 
 
 
@@ -105,20 +100,20 @@ public class BuyItemConfirmAction extends ActionSupport implements SessionAware{
 		this.user_master_id=user_master_id;
 	}
 
-	public String getCountry(){
-		return country;
+	public String getId(){
+		return id;
 	}
 
-	public void setCountry(String country){
-		this.country=country;
+	public void setId(String id){
+		this.id=id;
 	}
 
-	public int getPrice(){
-		return price;
+	public String getItem_Price(){
+		return item_price;
 	}
 
-	public void setPrice(int price){
-		this.price=price;
+	public void setItem_Price(String item_price){
+		this.item_price=item_price;
 	}
 
 	public int getCount(){

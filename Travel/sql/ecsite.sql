@@ -30,7 +30,7 @@ drop table if exists item_info_transaction;
 create table item_info_transaction(
 id int not null primary key auto_increment,
 item_name varchar(30),
-item_price int,
+item_price varchar(30),
 item_stock int,
 insert_date datetime,
 updated_date datetime
@@ -42,11 +42,11 @@ qtype varchar(255),
 body varchar(255)
 );
 
-insert into item_info_transaction(item_name,item_price,item_stock) values("japan",30000,20);
-insert into item_info_transaction(item_name,item_price,item_stock) values("usa",80000,5);
-insert into item_info_transaction(item_name,item_price,item_stock) values("korea",30000,10);
-insert into item_info_transaction(item_name,item_price,item_stock) values("aus",50000,2);
-insert into item_info_transaction(item_name,item_price,item_stock) values("canada",70000,10);
+insert into item_info_transaction(item_name,item_price,item_stock) values("日本","30000",20);
+insert into item_info_transaction(item_name,item_price,item_stock) values("韓国","30000",10);
+insert into item_info_transaction(item_name,item_price,item_stock) values("オーストラリア","50000",2);
+insert into item_info_transaction(item_name,item_price,item_stock) values("アメリカ","80000",5);
+insert into item_info_transaction(item_name,item_price,item_stock) values("カナダ","70000",10);
 insert into login_user_transaction(login_id,login_pass,user_name) values("internous","internous01","yuichi");
 
 
