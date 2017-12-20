@@ -4,10 +4,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="./css/country.css" rel="stylesheet" type="text/css">
 <meta  charset="UTF-8">
 <title>国検索</title>
-
-
 
 </head>
 <body>
@@ -24,7 +23,9 @@
 </select>
 
 <br><br>
-
+<div class="worldmap">
+	<img src="img/world.jpg">
+</div>
 
 </body>
 </html>

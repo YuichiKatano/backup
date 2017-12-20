@@ -20,7 +20,7 @@ public class BuyItemDAO {
 
 	public List<BuyItemDTO> buyItemDTOList=new ArrayList<BuyItemDTO>();
 
-	public List<BuyItemDTO> select(int id,String item_name,String item_price){
+	public List<BuyItemDTO> select(String id,String item_name,String item_price){
 		DBConnector db=new DBConnector();
 		Connection con=db.getConnection();
 		return buyItemDTOList;
@@ -38,7 +38,7 @@ public class BuyItemDAO {
 
 			while(resultSet.next()){
 				buyItemDTO=new BuyItemDTO();
-				buyItemDTO.setId(resultSet.getInt("id"));
+				buyItemDTO.setId(resultSet.getString("id"));
 				buyItemDTO.setItem_name(resultSet.getString("item_name"));
 				buyItemDTO.setItem_price(resultSet.getString("item_price"));
 				buyItemDTOList.add(buyItemDTO);
@@ -62,7 +62,7 @@ public class BuyItemDAO {
 			ResultSet resultSet = preparedStatement.executeQuery();
 
 			while(resultSet.next()){
-				dto.setId(resultSet.getInt("id"));
+				dto.setId(resultSet.getString("id"));
 				dto.setItem_name(resultSet.getString("item_name"));
 				dto.setItem_price(resultSet.getString("item_price"));
 

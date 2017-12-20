@@ -5,10 +5,10 @@
 <html>
 <head>
 <link href="./css/style.css" rel="stylesheet" type="text/css">
-<meta  charset="UTF-8">
  <link rel="stylesheet" href="./css/sample.css" type="text/css">
- <script type="text/javascript" src="./js/slick.js"></script>
  <script src="./js/slick.js" type="text/javascript"></script>
+<meta  charset="UTF-8">
+
 <title>Home</title>
 <script type="text/javascript">
 

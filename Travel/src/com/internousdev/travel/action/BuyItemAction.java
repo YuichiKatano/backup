@@ -13,7 +13,7 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class BuyItemAction extends ActionSupport implements SessionAware{
 
-	private int id;
+	private String id;
 	private String item_name;
 	private String item_price;
 
@@ -54,7 +54,7 @@ public class BuyItemAction extends ActionSupport implements SessionAware{
 	/**
 	 * @return id
 	 */
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 
@@ -66,7 +66,7 @@ public class BuyItemAction extends ActionSupport implements SessionAware{
 	/**
 	 * @param id セットする id
 	 */
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 

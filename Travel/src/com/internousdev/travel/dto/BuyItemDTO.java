@@ -2,15 +2,15 @@ package com.internousdev.travel.dto;
 
 public class BuyItemDTO {
 
-	public int id;
+	public String id;
 	public String item_name;
 	public String item_price;
 
-	public int getId(){
+	public String getId(){
 		return id;
 	}
 
-	public void setId(int id){
+	public void setId(String id){
 		this.id=id;
 	}
 
