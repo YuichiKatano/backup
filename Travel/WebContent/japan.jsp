@@ -3,13 +3,17 @@
     <%@taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
 <meta  charset="UTF-8">
+<link href="./css/japan.css" rel="stylesheet" type="text/css">
+<script src="./js/japan.js" type="text/javascript"></script>
 <title>日本</title>
 </head>
 <body>
-
+<div id="japan">
 <img src="img/japan.jpg"/>
+</div>
 <br>
 <br>
 <br>

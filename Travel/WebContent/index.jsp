@@ -4,17 +4,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="./css/style.css" rel="stylesheet" type="text/css">
- <link rel="stylesheet" href="./css/sample.css" type="text/css">
- <script src="./js/slick.js" type="text/javascript"></script>
 <meta  charset="UTF-8">
+<link href="./css/style.css" rel="stylesheet" type="text/css">
+<script src="./js/slick.js" type="text/javascript"></script>
+<link rel="stylesheet" href="slick.css">
+
+
+
+
+
 
 <title>Home</title>
-<script type="text/javascript">
-
-
-
-</script>
 </head>
 <body>
 
@@ -41,7 +41,7 @@
 
 
 
-<div id="main">
+
 
 
 <br><br><br><br><br><br>
@@ -49,21 +49,20 @@
 <s:form action="CountryAction">
 		<s:submit value="国を検索"/>
 </s:form>
+<div id="main">
 <br><br>
-	<div class='sightseeing'>
+	<div id='sightseeing'>
+
 		<img src="img/japan.jpg">
-	</div>
-	<div>
+
 		<img src="img/korea.jpg">
-	</div>
-	<div>
+
 		<img src="img/aus.jpg">
-	</div>
-	<div>
+
 		<img src="img/usa.jpg">
-	</div>
-	<div>
+
 		<img src="img/canada.jpg">
+
 	</div>
 
 </div>

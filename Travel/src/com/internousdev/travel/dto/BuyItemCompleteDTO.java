@@ -2,7 +2,7 @@ package com.internousdev.travel.dto;
 
 public class BuyItemCompleteDTO {
 
-	private int item_transaction_id;
+	private String item_transaction_id;
 
 	private int total_price;
 
@@ -12,11 +12,11 @@ public class BuyItemCompleteDTO {
 
 	private String pay;
 
-	public int getItem_transaction_id(){
+	public String getItem_transaction_id(){
 		return item_transaction_id;
 	}
 
-	public void setItem_transaction_id(int item_transaction_id){
+	public void setItem_transaction_id(String item_transaction_id){
 		this.item_transaction_id=item_transaction_id;
 	}
 
