@@ -15,10 +15,10 @@ public class BuyItemCompleteDAO {
 
 
 
-	private String sql = "INSERT INTO buy_item_transaction (item_transaction_id, total_count,  total_price, user_master_id, pay, insert_date, updated_date) VALUES(?, ?, ?, ?, ?, ?, ?)";
+	private String sql = "INSERT INTO buy_item_transaction (item_transaction_id, total_count,  total_price, user_master_id, pay, insert_date, updated_date) VALUES(?,?, ?, ?, ?, ?, ?)";
 
 
-	public void buyItemInfo(String item_transaction_id,  String total_count, String total_price, String user_master_id, String pay) throws SQLException {
+	public void buyItemInfo(String item_transaction_id, String total_count, String total_price, String user_master_id, String pay) throws SQLException {
 
 		// InsertDate と updateDateのカラムに値を入れるため、現在時刻を取得します。
 		Date date = new Date();
@@ -46,3 +46,7 @@ public class BuyItemCompleteDAO {
 		}
 	}
 }
+
+//
+
+//

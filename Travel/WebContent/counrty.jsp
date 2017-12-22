@@ -5,13 +5,14 @@
 <html>
 <head>
 <link href="./css/country.css" rel="stylesheet" type="text/css">
+
 <meta  charset="UTF-8">
 <title>国検索</title>
 
 </head>
 <body>
 
-
+<p>国を選択してください。</p>
 
 <select name="place" onChange="location.href=value;">
 	<option value="JapanAction">日本</option>

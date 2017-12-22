@@ -17,7 +17,7 @@ updated_date datetime
 drop table if exists buy_item_transaction;
 create table buy_item_transaction(
 id int not null primary key auto_increment,
-item_transaction_id int,
+item_transaction_id varchar(16),
 total_count int,
 total_price int,
 user_master_id varchar(16),
