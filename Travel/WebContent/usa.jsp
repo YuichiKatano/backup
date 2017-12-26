@@ -15,6 +15,8 @@
 <a href='<s:url action="BuyItemAction"/>'>購入ページへ</a>
 <br>
 <a href='<s:url action="CountryAction"/>'>戻る</a>
+<br>
+<a href='<s:url action="HomeAction"/>'>ホーム画面に戻る</a>
 
 </body>
 </html>

@@ -70,9 +70,11 @@ public class BuyItemConfirmAction extends ActionSupport implements SessionAware{
 
 
 		System.out.println(dto.getItem_name());
+
+				session.put("id",dto.getId());
 				session.put("item_name",dto.getItem_name());
-				session.put("item_price", dto.getItem_price());
-				session.put("count",count);
+				session.put("total_price", dto.getItem_price());
+				session.put("total_count",count);
 				session.put("pay",payment);
 
 

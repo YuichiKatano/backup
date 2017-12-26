@@ -4,9 +4,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta  charset="UTF-8">
 <link href="./css/country.css" rel="stylesheet" type="text/css">
 
-<meta  charset="UTF-8">
+
 <title>国検索</title>
 
 </head>

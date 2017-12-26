@@ -3,5 +3,6 @@
  */
 
 
-
- $('.sightseeing').slick();
+$(function() {
+    $('.sightseeing').slick();
+});
